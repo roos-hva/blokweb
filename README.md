@@ -38,11 +38,11 @@ surface
 https://www.pansy-shop.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+startpagina pansy-shop.com
 <img src="images/pagina1-pansy.png" width="375px" alt="startpagina pansy-shop.com">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
+about us pagina pansy-shop.com
 <img src="images/pagina2-pansy.png" width="375px" alt="about us pagina pansy-shop.com">
  
 </details>
