@@ -1,0 +1,14 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+.pansylogo {
+  max-height: 46px;
+  width: auto;
+  max-width: 100%;
+}
+
+footer {
+  background-color: #EA3827;
+}
