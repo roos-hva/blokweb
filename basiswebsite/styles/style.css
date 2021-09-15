@@ -1,6 +1,38 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin:0;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: #231a58;
+  font-weight: 400;
+}
+
+h1 {
+  position: relative;
+  left: 0.6em;
+  padding: 2em;
+  font-weight: 500;
+  font-size: calc((2.8 - 1) * 1.2vh + 1rem)
+  
+}
+
+
+h2 {
+  position: relative;
+  left: 1.6em;
+  padding: 1em;
+  font-weight: 500;
+  font-size: calc((2.8 - 1) * 1.2vh + 1rem)
+}
+
+p {
+  position: relative;
+  left: 3em;
+  padding: 1em;
+  
 }
 
 .pansylogo {
@@ -9,6 +41,50 @@
   max-width: 100%;
 }
 
+header, section:nth-of-type(1) {
+  background-color: #FCE1E0;
+  
+}
+
+section:nth-of-type(1) {
+ display: flex;
+ justify-content: center;
+ flex-flow: column;
+ 
+}
+
+.tekstblokgeel {
+  background-color: #EDD646 ;
+  margin-bottom: 3em;
+ }
+
+section:nth-of-type(2) {
+  background-color: #CEC0DE;
+}
+
+section:nth-of-type(3) {
+  background-color: #EDD646;
+}
+
+section:nth-of-type(4) {
+  background-color: #FCE1E0;
+}
+
+
+section:nth-of-type(5) {
+  background-color: #CEC0DE;
+}
+
+section:nth-of-type(6) {
+  background-color: #EDD646;
+}
+
 footer {
   background-color: #EA3827;
+}
+
+main section:nth-of-type(1) img {
+  min-width: 30em;
+  max-width: 40em;
+  margin: 3em;
 }
