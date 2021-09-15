@@ -16,13 +16,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Roos Horselenberg
+Sanne 't Hooft (vervangen door jouw naam)
 
 #### Je startniveau:
-blauw
+hier je startniveau (kies uit zwart, rood óf blauw)
 
 #### Je focus:
-surface 
+hier je focus (kies uit responsive óf surface plane)
+ 
 </details>
 
 
@@ -35,15 +36,15 @@ surface
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://www.pansy-shop.com/
+link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-startpagina pansy-shop.com
-<img src="images/pagina1-pansy.png" width="375px" alt="startpagina pansy-shop.com">
+hier de naam van de pagina  
+<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-about us pagina pansy-shop.com
-<img src="images/pagina2-pansy.png" width="375px" alt="about us pagina pansy-shop.com">
+hier de naam van de pagina  
+<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -57,13 +58,13 @@ about us pagina pansy-shop.com
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdownschets.png" width="500px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/breakdownschets.png" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/breakdownschets.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
