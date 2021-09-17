@@ -61,10 +61,7 @@ hier de naam van de pagina
 <img src="images/breakdownschets.png" width="500px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/breakdownschets.png" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/breakdownschets.png" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/breakdownschets.dynamisch.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -90,20 +87,19 @@ Problemen die ik heb:
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Roos     | Mina       | Valerie   | Merel     |
+| hulp met het schalen op mobiel formaat | hulp met schalen  | centreren  | Nog wat problemen met css |
+|...    | ...| wat moet er in de footer |... |
+
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Zorg dat je de width en height zoveel mogelijk aangeeft in procenten;
+- Geef geen width en height aan bij a's maar gebruik padding;
+- Vervang de div'jes voor een ander element;
+- classes mogen eigenlijk alleen gebruikt worden bij sections.
 
 </details>
 
