@@ -1,4 +1,7 @@
 /* CSS Document */
+
+/*algemeen*/
+
 *, *::after, *::before {
   box-sizing:border-box;  
   margin:0;
@@ -8,17 +11,39 @@ body {
   font-family: 'Work Sans', sans-serif;
   color: #231a58;
   font-weight: 400;
+  width: 100%;
+  
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: left;
+}
+
+section {
+
+  width: 100%;
+  
+  padding-right: 4vw;
+  padding-left: 4vw;
 }
 
 h1 {
   position: relative;
-  left: 0.6em;
   padding: 2em;
   font-weight: 500;
   font-size: calc((2.8 - 1) * 1.2vh + 1rem)
   
 }
-
 
 h2 {
   position: relative;
@@ -30,16 +55,85 @@ h2 {
 
 p {
   position: relative;
-  left: 3em;
+  left: 4.4em;
   padding: 1em;
+  margin-top: -3em;
+}
+
+/* nav: shopping cart, logo, burgermenu*/
+
+nav ul:first-of-type{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:0;
+  padding-inline-start: 0;
+
+}
+
+nav ul:first-of-type div {
+ position: relative;
+ top:2em;
+ right: 1em;
+ left: 1em;
+
+ margin-bottom: 5em;
+ max-height: 2vh;
+ width: auto;
+ max-width: 100%;
+}
+
+nav ul:first-of-type div:nth-of-type(1) a img {
+  max-height: 5vh;
+  margin-left: 0.5em;
+ }
+
+nav ul:first-of-type div:nth-of-type(2) a img {
+ max-height: 5vh;
+ margin-left: 2em;
+}
+
+nav ul:first-of-type div:nth-of-type(3) a img {
+  max-height: 5vh;
+  display: block;
+}
+
+nav ul:first-of-type div:nth-of-type(3) a img:last-of-type {
+  max-height: 5vh;
+  margin-top: 0.8em;
   
 }
 
-.pansylogo {
-  max-height: 46px;
-  width: auto;
-  max-width: 100%;
+
+.tekstblokgeel {
+  position: absolute;
+  bottom: 10em ;
+  right: 28em;
+  background-color: #EDD646 ;
+  margin-bottom: 3em;
+  text-align: left;
+  line-height: 3.5em;
+  min-width: 17.5em;
+  max-width: 30em;
+  min-height: 22.7em;
+  max-height: 28.6em;
 }
+
+.tekstblokgeel p {
+  position: relative;
+  left: 2.3em;
+  max-width: 11em;
+
+  padding: 1em;
+  margin-top: -3em;
+  font-size: 1.625em;
+  overflow-wrap: break-word;
+  
+}
+
+
+/*sections*/
 
 header, section:nth-of-type(1) {
   background-color: #FCE1E0;
@@ -53,10 +147,6 @@ section:nth-of-type(1) {
  
 }
 
-.tekstblokgeel {
-  background-color: #EDD646 ;
-  margin-bottom: 3em;
- }
 
 section:nth-of-type(2) {
   background-color: #CEC0DE;

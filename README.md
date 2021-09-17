@@ -78,7 +78,9 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Problemen die ik heb:
+- De werking van de site op telefoon formaat;
+<img src="images/schaalprobleem.png" width="375px" alt="probleem met schalen">
 
 
 ### Agenda voor meeting
