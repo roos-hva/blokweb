@@ -82,6 +82,10 @@ Problemen die ik heb:
 - De werking van de site op telefoon formaat;
 <img src="images/schaalprobleem.png" width="375px" alt="probleem met schalen">
 
+- Probleem centreren elementen;
+<img src="images/centreerprobleem.png" width="375px" alt="probleem met schalen">
+
+
 
 ### Agenda voor meeting
 samen met je groepje opstellen
