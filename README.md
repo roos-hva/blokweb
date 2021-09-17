@@ -39,11 +39,11 @@ surface plane
 pansy-shop.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
+De startpagina: screenshot wil helaas niet goed werken.
 <img src="images/pansystartpaginareadme.png" width="375px" alt="startpagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
+About me: screenshot wil helaas niet goed werken.
 <img src="images/aboutmereadme.png" width="375px" alt="aboutmepagina">
  
 </details>
@@ -87,9 +87,18 @@ Problemen die ik heb:
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| Roos     | Mina       | Valerie   | Merel     |
-| hulp met het schalen op mobiel formaat | hulp met schalen  | centreren  | Nog wat problemen met css |
-|...    | ...| wat moet er in de footer |... |
+Roos:
+- Hulp met het schalen op mobiel formaat.
+
+Mina:
+- Hulp met schalen.
+
+Valerie:
+- Hulp met centreren.
+- Wat moet er in de footer?
+
+Merel:
+- Nog wat problemen met css.
 
 
 
