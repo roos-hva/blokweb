@@ -103,7 +103,6 @@ Merel:
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Zorg dat je de width en height zoveel mogelijk aangeeft in procenten;
 - Geef geen width en height aan bij a's maar gebruik padding;
@@ -115,24 +114,45 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 
 
-
 ## Voortgang 2 (week 3)
 
 <details>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik had wat problemen met mijn css en hoe bepaalde elementen waren opgetseld. Daarom ben ik nu bezig met het opnieuw opstellen van mijn css en dat gaat to nu goed. Zo heb ik al een aantal dingen op kunne plassen zoals de navbar.
+
+## Navbar
+
+before:
+<img src="images/navbarbefore.png" width="375px" alt="navbar before">
+
+after:
+<img src="images/navbarafter.png" width="375px" alt="navbar after">
+
+## Opstelling tekst
+
+before:
+<img src="images/opstellingtekstbefore.png" width="375px" alt="opstelling tekst before">
+
+after:
+<img src="images/tekstopstellingafter.png" width="375px" alt="navbar after">
+
+Verder heb ik nog wat problemen met het hamburgermenu dus daar hoop ik hulp mee te krijgen tijdens het voortgangsgesprek.
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
+Roos:
+- Hulp met het maken van een full screen hamburgermenu en het gele tekstblok uit mijn site;
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Mina:
+- Hulp met het hamburgermenu en hoe je een slider maakt met afbeeldingen als een soort van carousel;
+
+Valerie:
+- Wil ook weten hoe je een slider carousel maakt en een hamburger menu, ook snapt ze nog niet helemaal wat ze met de bronnen moet doen.
+
+Julia:
+- Wil ook graag weten heo ze een hamburger menu kan maken.
 
 
 ### Verslag van meeting

@@ -8,177 +8,123 @@
   
 }
 
-img {
-  width: 100%;
+/*kleuren uit document*/
+:root {
+  --button-color: #231a58;
+  --brand-color1: #EDD646;
+  --brand-color2: #FCE1E0;
+  --brand-color3: #CEC0DE;
+  --tekst-color1: #231a58;
+  --tekst-color2: white;
+  --footer-color: #EA3827;
 }
 
 body {
   font-family: 'Work Sans', sans-serif;
-  color: #231a58;
+  color: var(--tekst-color1);
   font-weight: 400;
   width: 100%;
-
-  
+  min-width: 365px;
 }
 
 main {
   display: flex;
-  justify-content: center;
   flex-flow: column;
   text-align: left;
+  justify-content: space-between;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  text-align: left;
-}
 
 section {
-
+  padding-top: 10%;
+  padding-bottom: 10%;
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
   overflow: hidden;
-  /*
-  padding-right: 4vw;
-  padding-left: 4vw;
+  justify-content: space-between;
 
-  */
 }
 
 h1 {
-  position: relative;
-  padding: 2em;
   font-weight: 500;
+  /*De calc heb ik uit de css van de pagina gehaald*/
   font-size: calc((2.8 - 1) * 1.2vh + 1rem)
   
 }
 
 h2 {
-  position: relative;
   font-weight: 500;
+    /*De calc heb ik uit de css van de pagina gehaald*/
   font-size: calc((2.8 - 1) * 1.2vh + 1rem)
 }
-/*
-p {
-  position: relative;
-  left: 4.4em;
-  padding: 1em;
-  margin-top: -3em;
-}
-/*
 
-/* nav: shopping cart, logo, burgermenu*/
+
+/*navbar hoofpagina*/
 
 nav ul:first-of-type{
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding-left: 10% ;
   padding-right: 10%;
-  padding-inline-start: 0;
+  
+  padding-inline-start: 0.3;
+  padding-inline-end: 0.3;
+  list-style-type: none;
+  min-width: 365px;
 
 }
 
-nav ul:first-of-type div {
+nav ul:first-of-type li {
  position: relative;
  top:2em;
- right: 1em;
- left: 1em;
 
  margin-bottom: 5em;
- max-height: 2vh;
  width: auto;
  max-width: 100%;
 }
 
-nav ul:first-of-type div:nth-of-type(1) a img {
-  max-height: 5vh;
-  
- }
+nav ul:first-of-type li:nth-of-type(1) a img {
+  max-width: 20vw;
 
-nav ul:first-of-type div:nth-of-type(2) a img {
- max-height: 6vh;
+}
+
+nav ul:first-of-type li:nth-of-type(2) a img {
+ max-width: 35vw;
  
 }
 
-nav ul:first-of-type div:nth-of-type(3) a img {
-  max-height: 5vh;
+nav ul:first-of-type li:nth-of-type(3) a img {
+  max-width: 20vw;
   display: block;
 }
 
-nav ul:first-of-type div:nth-of-type(3) a img:last-of-type {
-  max-height: 5vh;
-  margin-top: 0.8em;
+nav ul:first-of-type li:nth-of-type(3) a img:last-of-type {
+  max-height: 20vh;
+  margin-top: .8em;
   
 }
 
 
-.tekstblokgeel {
-
-  width: 100%;
-  background-color: #EDD646 ;
-  margin-bottom: 3em;
-  text-align: left;
-  
-}
-
-.tekstblokgeel p {
-  position: relative;
-
-  margin-top: -3em;
-  font-size: 1.625em;
-  overflow-wrap: break-word;
-  
-}
-
-
-/*sections*/
-
-
-header, section:nth-of-type(1) {
-  background-color: #FCE1E0;
+header, main section:nth-of-type(1) {
   background-image: url("../images/achtergrondstartpagina.png");
   background-size: 200%;
   
 }
 
-section:nth-of-type(1) {
- display: flex;
- justify-content: center;
- flex-flow: column;
- 
+main section {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  
 }
 
-
-section:nth-of-type(2) {
-  background-color: #CEC0DE;
-}
-
-section:nth-of-type(2) img{
-  width: 100%;
-}
-
-section:nth-of-type(3) {
-  background-color: #EDD646;
-}
-
-section:nth-of-type(4) {
-  background-color: #FCE1E0;
-}
-
-
-section:nth-of-type(5) {
-  background-color: #CEC0DE;
-}
-
-section:nth-of-type(6) {
-  background-color: #EDD646;
-}
-
-footer {
-  background-color: #EA3827;
+main section ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  
 }
