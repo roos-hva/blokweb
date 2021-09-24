@@ -12,7 +12,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
-<details open>
+<details>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
@@ -32,7 +32,7 @@ surface plane
 
 ## Je website
 
-<details open>
+<details>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
@@ -116,7 +116,7 @@ Merel:
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
@@ -133,7 +133,7 @@ after:
 ## Opstelling tekst
 
 before:
-<img src="images/opstellingtekstbefore.png" width="375px" alt="opstelling tekst before">
+<img src="images/opstellingtekstafter.png" width="375px" alt="opstelling tekst before">
 
 after:
 <img src="images/tekstopstellingafter.png" width="375px" alt="navbar after">
