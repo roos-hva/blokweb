@@ -22,11 +22,18 @@
   --tekst-color2: white;
   --footer-color: #EA3827;
   --nav-color-active: #f08c38;
+  --brand-font-style: 'Work Sans', sans-serif;
+  --input-background-color: white;
+  --input-color: black;
+  --input-placeholder-color: rgb(180, 180, 180);
+  --input-border-color: lightgrey;
+  --focus-border-color: #231a58;
+  --footer-button-color: #ffe3e3;
 
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--brand-font-style);
   color: var(--tekst-color1);
   font-weight: 400;
   width: 100%;
@@ -39,7 +46,7 @@ main {
   text-align: left;
   justify-content: space-between;
 }
-
+ 
 main section {
   display: flex;
   justify-content: center;
@@ -53,6 +60,158 @@ main section ul {
   flex-flow: column;
   
 }
+
+h1 {
+  font-weight: 500;
+  padding-bottom: 10%;
+  /*De calc heb ik uit de css van de pagina gehaald*/
+  font-size: calc((2.8 - 1) * 1.2vh + 1rem);
+  letter-spacing: 0.05em;
+  
+}
+
+h2 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 3%;
+    /*De calc heb ik uit de css van de pagina gehaald*/
+  font-size: calc((2.8 - 1) * 1.2vh + 1rem);
+  letter-spacing: 0.05em;
+}
+
+p {
+  line-height: 2;
+  font-weight: 300;
+  margin-top: 3%;
+}
+
+a {
+  transition: 0.2s;
+}
+
+a:hover {
+  cursor: pointer;;
+}
+
+
+/******************/
+/* footer styling */
+/******************/
+
+footer {
+  background-color: var(--footer-color);
+  flex-flow: column;
+  color: var(--tekst-color2);
+  font-weight: 300;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+}
+
+footer section:nth-of-type(1) p:first-of-type{
+  justify-content: flex-start;
+  text-align: left;
+  width: 60%;
+  line-height: 2em;
+  
+}
+
+footer section:nth-of-type(1) address{
+  justify-content: flex-start;
+  text-align: left;
+  width: 50%;
+  line-height: 2em;
+  
+} 
+
+ footer section:nth-of-type(1) p:nth-of-type(2), footer section:nth-of-type(1) p:nth-of-type(3), footer section:nth-of-type(1) a  {
+  width: 80%;
+}
+  
+footer section:nth-of-type(2) {
+  justify-content: center;
+  text-align: center;
+}
+ 
+footer section:nth-of-type(3) {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+footer a {
+  color: var(--tekst-color2);
+  line-height: 3.5em;
+  text-underline-offset: .3em;
+}
+
+footer img:first-of-type {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+footer button, section:last-of-type button {
+ padding-top: 1.8em;
+ padding-bottom: 1.8em;
+ width: 10em;
+
+ position: relative;
+ left:calc(50% - 5em);
+}
+
+footer button {
+background-color: var(--footer-button-color);
+color: var(--tekst-color1);
+}
+
+footer section {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+footer h2 {
+  font-size: 1.6em;
+}
+
+footer input, section:last-of-type input {
+  margin-top: 2.8em;
+}
+
+/***********************/
+/* social links footer */
+/***********************/
+
+footer section:last-of-type{
+  padding-top: 0;
+  padding-bottom: 2%;
+}
+
+footer section:last-of-type img {
+ width: 90%;
+}
+
+footer section:last-of-type img:first-of-type {
+  width: 80%;
+ }
+
+
+footer section:last-of-type ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding-inline-start: 0;
+  
+}
+
+footer section:last-of-type li {
+  padding:3%;
+}
+
 /***********/
 /* buttons */
 /***********/
@@ -62,15 +221,17 @@ main section ul {
 /* left buttons */
 /****************/
 
-main a, button{
+main a, button {
+
   background-color: var(--button-color);
   color: var(--tekst-color2);
   align-items: center;
 
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--brand-font-style);
   font-weight: 400;
   text-align: center;
   text-decoration: none;
+  border: none;
 
 
   margin-top: 2em;
@@ -78,12 +239,14 @@ main a, button{
 
   padding: 1.5em;
   border-radius: 2.5em 2.5em;
-  width: 60%;
+  width: 10em;
   max-width: 195px;
 
   cursor: pointer;
+  transition: 0.2s;
   
 }
+
 
 /************************/
 /* gecentreerde buttons */
@@ -92,12 +255,7 @@ main a, button{
 main section:nth-of-type(2) a:nth-of-type(1),main a:nth-of-type(2), main section:nth-of-type(5) a, button {
   
   position: relative;
-  margin-left: 4em;
-  margin-right: 4em;
-  margin-top: 2em;
-  margin-bottom: 2em;
-
-
+  left:calc(50% - 5.75em);
 }
 
 /**********************************/
@@ -110,6 +268,24 @@ main section:nth-of-type(3) a, section:nth-of-type(5) a {
  color: var(--tekst-color1) ;
 }
 
+/**********/
+/* states */
+/**********/
+
+main a:hover , button:hover {
+  opacity:80%;
+}
+
+a:focus , button:focus, input:focus {
+  outline: solid 2px var(--focus-border-color);
+  outline-offset: .2em;
+}
+
+/* zorgt dat de focus alleen geactiveerd wordt bij het gebruiken van een toetsenbord */
+a:focus:not(:focus-visible) , button:focus:not(:focus-visible), input:focus:not(:focus-visible){
+  outline: none;
+
+}
 
 /******************/
 /* hamburger menu */
@@ -120,10 +296,9 @@ main section:nth-of-type(3) a, section:nth-of-type(5) a {
 
 
 nav button:nth-of-type(1)  {
-  /* zodat de kinderen in de button gepositioneerd worden */
-  position:relative;
   
-  /* maten, vormgeving  en co van de button */
+  position:relative;
+  left: 0;
   width:2em; 
   height:3em;
   margin:0; padding:0;
@@ -140,8 +315,6 @@ nav button:nth-of-type(1)  {
 
 
 nav button:nth-of-type(1) span {
-  /* hiermee worden de span uit de normale flow gehaald */
-  /* in combinatie met flex van de button staan ze dan over elkaar heen */
   position:absolute;
   width:2em; 
   height: 2px;
@@ -150,42 +323,61 @@ nav button:nth-of-type(1) span {
 }
 
 nav button:nth-of-type(1) span:first-of-type {
-  /* het eerste streepje vanuit het midden een beetje omhoog */
+  
   transform:translatey(-5px);  
 }
 nav button:nth-of-type(1) span:last-of-type {
-  /* het laatste streepje vanuit het midden een beetje omlaag */
+  
   transform:translatey(5px);  
+}
+
+body.menuOpen nav section {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;    
+ 
+  padding-top: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-top: 10em;
+}
+
+body.menuOpen nav section a {
+  width: 2%;
+
 }
 
 
 body.menuOpen nav button:nth-of-type(1) span:first-of-type {
-  /* het eerste streepje gaat terug naar het midden */
-  /* en draait ondertussen 45 graden */
   transform:translatey(0) rotate(45deg); 
   background-color: var(--nav-color-active); 
 }
 
 
 body.menuOpen nav button:nth-of-type(1) span:last-of-type {
-  /* het laatste streepje gaat terug naar het midden */
-  /* en draait ondertussen -45 graden */
   transform:translatey(0) rotate(-45deg);  
   background-color: var(--nav-color-active); 
 }
 
-body.menuOpen span svg {
+body.menuOpen a:first-of-type svg {
   stroke: var(--nav-color-active); 
   fill: var(--nav-color-active);
 }
 
 body.menuOpen ul:first-of-type {
   position: fixed;
+  width: 100%;
 }
 
 body.menuOpen ul:nth-of-type(2) {
   transform: translateY(0%);
   opacity: 100%;
+}
+
+body.menuOpen a:first-of-type p {
+  color: var(--nav-color-active);
 }
 
 
@@ -203,6 +395,7 @@ nav ul:nth-of-type(2) {
   padding:4em 0 0;
   list-style:none;
   opacity: 0%;
+ 
   
   position:fixed;
   top:0;
@@ -210,12 +403,20 @@ nav ul:nth-of-type(2) {
   left:0;
   right:0;
   
-  transform: translateY(5%);
+  transform: translateY(100%);
   opacity: 0%;
   transition: .5s cubic-bezier(0.175, 0.885, 0.320, 1.01);;
   z-index: 98;
 }
 
+nav ul:nth-of-type(2) li a:focus {
+  color: var( --tekst-color1);
+}
+
+nav ul:nth-of-type(2):focus-within {
+  transform: translateY(0%);
+  opacity: 100%;
+}
 
 
 nav ul:nth-of-type(2) li {
@@ -234,6 +435,62 @@ nav ul:nth-of-type(2) a {
   color: var(--nav-color);
   text-decoration: none;
 }
+
+
+
+nav ul:nth-of-type(2) a {
+  display:flex;
+  justify-content: center;
+
+  position: relative;
+  top: 3em;
+
+  font-size: 2rem;
+  padding:.25em 1em;
+  color: var(--nav-color);
+  text-decoration: none;
+
+  outline:none;
+}
+
+
+
+/*******************************/
+/* animatie lijntje onder link */
+/*******************************/
+
+/* bron: https://codepen.io/shooft/pen/yLOdLBg */
+
+ul:nth-of-type(2) li a::before {
+  content:"";
+  background-color:currentcolor;
+
+  position:absolute;
+  left:calc(50% - 3em);
+  bottom:-.1em;
+
+
+  width: 6em;
+  height:.1em;
+  border-radius:.125em;
+
+  text-decoration-line: wavy;
+  
+  transform:scalex(0);
+  transition:.3s;
+
+}
+
+ul:nth-of-type(2) li a:hover::before {
+  transform:scalex(1);
+}
+
+ul:nth-of-type(2) li a:focus::before  {
+  transform:scalex(1);
+}
+
+
+
 
 nav ul:nth-of-type(3) {
   background-color: var(--brand-color2);
@@ -278,11 +535,6 @@ nav ul:nth-of-type(3) a {
 
 
 
-
-
-
-
-
 section {
   padding-top: 10%;
   padding-bottom: 10%;
@@ -296,20 +548,6 @@ section {
 
 
 
-h1 {
-  font-weight: 500;
-  padding-bottom: 10%;
-  /*De calc heb ik uit de css van de pagina gehaald*/
-  font-size: calc((2.8 - 1) * 1.2vh + 1rem)
-  
-}
-
-h2 {
-  font-weight: 500;
-  line-height: 1.2;
-    /*De calc heb ik uit de css van de pagina gehaald*/
-  font-size: calc((2.8 - 1) * 1.2vh + 1rem)
-}
 
 
 /*********************/
@@ -320,13 +558,21 @@ h2 {
 /***************/
 /* winkelwagen */
 /***************/
-span svg {
+a:first-of-type svg, a:first-of-type p {
   stroke: var(--button-color);
   stroke-width: 1px;
   height: 2.3em;
   width: 2.3em;
 
   transition: .3s;
+}
+
+a:first-of-type p {
+  font-family: var(--brand-font-style);
+  font-size: .6em;
+  position: absolute;
+  bottom: 2.6em;
+  left: 3.3em;
 }
 
 /************/
@@ -367,7 +613,7 @@ nav ul:first-of-type li:nth-of-type(1) a img {
 }
 
 nav ul:first-of-type li:nth-of-type(2) a img {
- max-width: 30vw;
+ max-width: 130px;
  
 }
 
@@ -384,8 +630,6 @@ nav ul:first-of-type li:nth-of-type(3) a img:last-of-type {
 
 
 
-
-
 header {
   background-color: var(--brand-color2);
 }
@@ -397,7 +641,40 @@ main section:nth-of-type(1) {
   
 }
 
+/*****************/
+/* input styling */
+/*****************/
 
+input {
+
+  padding:1.9em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  color:var(--input-color);
+  background-color:var(--input-background-color);
+  border: solid 1px var(--input-border-color) ;
+  
+  outline:none;
+  appearance:none;
+
+  transition: 0.2s;
+}
+
+input::placeholder {
+  color:var(--input-placeholder-color);
+  font-size: 1.3em;
+  font-style: var(--brand-font-style);
+  font-weight: 100;
+}
+
+input[type="search"] {
+  padding: 1em 1em 1em 3em;
+  background-repeat: no-repeat;
+  background-size: 2em auto;
+  background-position: .5em center;
+
+}
 
 
 /***************************/
@@ -462,21 +739,74 @@ main section:nth-of-type(4) {
 }
 
 main section:nth-of-type(5) {
-  background-color: var(--brand-color3) ;
-  background-image: url("../getintouch.png");
-
+  padding: 0%;
+  background-color: var(--brand-color3);
+  z-index: 100;
+  text-align: center;
+  background-image: url(../images/getintouch.png);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
+main section:nth-of-type(5) h2 {
+  font-size: 2.8em;
+  margin-top: 50%;
+}
+
+main section:nth-of-type(5) a {
+  margin-bottom: 50%;
+}
+
+main section:nth-of-type(5) img {
+  position: relative;
+  right: 26em;
+  width: 300%;
+}
+
+
 main section:nth-of-type(6) {
+  background-color: var(--brand-color3);
+
+  text-align: center;
+
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 15%;
+  padding-bottom: 20%;
+}
+
+main section:nth-of-type(6) h2 {
+ margin-bottom: 1em;
+}
+
+
+main section:nth-of-type(6) img {
+  width: 80%;
+  
+}
+
+main section:nth-of-type(6) ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+
+  width: 100%;
+  padding-inline-start: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+main section:nth-of-type(7) {
   background-color: var(--brand-color1);
 }
 
-section:nth-of-type(1) section {
-  background-color: var(--brand-color1) ;
-
+section:last-of-type {
+  text-align: center;
 }
 
-footer {
-  background-color: var(--footer-color);
-  color: var(--tekst-color2);
+
+section:last-of-type h2{
+  font-size: 1.6em;
 }

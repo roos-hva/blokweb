@@ -116,7 +116,7 @@ Merel:
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
@@ -171,16 +171,19 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Toegankelijkheidstest (week 4)
 
-<details>
+<details open>
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+- Dingen die niet te zien zijn zoals een uitklapbaar hamburgermenu worden ook voor gelezen.
+- Om een screenreader goed te begrijpen heb je soms langere omschrijvingen nodig dan een kleine korte omschrijving.
+- Ik moet een tag even veranderen naar het juiste semantische element omdat je hem nu niet kan bereiken met tab.
+- Nav bar opent nu automatisch als je tab gebruikt zo tabt hij niet door een onzichtbaar element dit werkt nu ook met de screen reader.
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Onzichtbaar hamburgermenu
+Toen ik begon met de screen reader test liep ik er tegenaan dat hij het hamburgermenu ook ging voorlezen ookal was hij op dat moment niet in het scherm. Dit heb ik kunnen oplossen met :focus-within de navbar opent nu automatisch, zo is de navbar ook in beeld als hij wordt gelezen en kan je er ook mee interacteren. Zo kan je nu ook makkelijk het hamburgermenu openen door te tabben en hoef je niet tussendoor op enter te drukken.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+<img src="images/focus-within.png" width="375px" alt="focus-within hamburgermenu">
 
 
 #### Titel tweede bevinding. 
@@ -208,21 +211,46 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het ging eigenlijk wel goed maar ik heb wel een paar kleine probleempjes waar ik tijdens het voortgangsgesprek wat hulp bij kan krijgen namelijk:
+
+- De social media links in het hamburgermenu komen alleen tevoorschijn als je er doorheen bent getabt soms staan ze ook opeens in een column in plaats van een row. Ik heb al wat dingen geprobeerd maar ik weet niet zo snel waar de fout zit.
+
+Dit zijn de verschillende staten ervan:
+
+<img src="images/socialonzichtbaar.png" width="375px" alt="socials on nav onzichtbaar">
+
+<img src="images/socialnatab.png" width="375px" alt="socials na tabben zichtbaar">
+
+<img src="images/socialcolumn.png" width="375px" alt="socials staan ineens in een column">
+
+Verder moet ik ook nog eeen manier vinden hoe ik sommige titels moet omdraaien in mijn css om correcte html te houden in mijn sections hier hoop ik ook nog wat hulp bij te krijgen.
+
+Ook heb ik nog een probleem met de focus van de social media in mijn footer dit gebeurt er nu namelijk en ik wil dat dit alleen om de logo's staat.
+
+<img src="images/focusprobleem.png" width="375px" alt="probleem met de focus van de socials in mijn footer">
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Roos:
+- Hulp met wat problemen van de focus states;
+- Hulp met de socials in hamburgermenu;
+- Het omdraaien van elementen uit de html in mijn css
+
+Mina:
+- JavaScript;
+- Het linken van een live instagram hashtag
+
+Valerie:
+?
+
+Merel:
+?
 
 
 ### Verslag van meeting
